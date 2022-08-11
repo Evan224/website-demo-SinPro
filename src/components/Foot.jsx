@@ -6,7 +6,6 @@ import {useNavigate} from 'react-router-dom'
 export default function(){
   const navigate=useNavigate();
   const handleClick=(str)=>{
-    console.log(str);
     window.scrollTo(0, 0)
     navigate(str,{replace:true});
   }

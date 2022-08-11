@@ -71,22 +71,25 @@ const Header = () => {
     }
 
     return (
-    <div className={`${theme==="up"?"bg-transparent top-0 ":"bg-white top-0 fixed"} h-[4vw]  
+    // <div className={`${theme==="up"?"bg-transparent top-0":"bg-white top-0 fixed"} h-[4vw]  
+    // w-[100vw] flex flex-row px-[15vw] justify-between
+    //  mx-auto text-center z-90`}>
+    <div className={`${theme==="up"?"bg-transparent top-0 fixed":"bg-white top-0 fixed"} h-[4vw]  
     w-[100vw] flex flex-row px-[15vw] justify-between
-     mx-auto text-center z-10`}>
+     mx-auto text-center z-30`}>
 
         {/* 装图片 */}
   
        <img src={`${theme==="up"?lightLogo:logo}`} alt="not found" 
-       className="mx-auto w-[6vw] h-[4vw] py-[1vw]"/>
+       className="mx-auto w-[6vw] h-[4.5vw] py-[1vw] z-90"/>
    
         {/* 装标题 */}
-            <div className="flex-row flex-none flex">
+            <div className="flex-row flex-none flex z-90">
               <div className="w-[20vw]"></div>
               {Object.keys(listWords).map((item) => {
                 if(item==="News"){
                   return(
-                    <div key={item} onClick={()=>setShow(true)} className={`ml-[3vw] text-[1px] flex items-center 
+                    <div key={item} onClick={()=>setShow(true)} className={`ml-[3vw] text-[1vw] flex items-center 
                     ${getCurrentColor(item)}` }>
                         <p>
                           {listWords[item]}
@@ -97,7 +100,7 @@ const Header = () => {
 
                 return (
                   <Link to={`/${item}`} key={item} onClick={()=>{setCurrent(item)}} 
-                  className={`ml-[3vw] text-[1px] flex items-center 
+                  className={`ml-[3vw] text-[1vw] flex items-center 
                   ${getCurrentColor(item)}  ${getCurrentBorder(item)}`}>
                       <p>
                         {listWords[item]}
@@ -108,7 +111,7 @@ const Header = () => {
             </div>
 
         <Alert show={show} handleShow={()=>{setShow(false)}} 
-        type={"building"} text="网站内容搭建中 ， 敬请期待"></Alert>
+        type={"building"}></Alert>
     </div>
   );
 };

@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "./static/css/main.1dde5c57.css",
+    "main.js": "./static/js/main.2401eab4.js",
+    "static/media/mainpage-background.jpg": "./static/media/mainpage-background.6dd6bb472f7b1ace7b5d.jpg",
+    "static/media/picture2.png": "./static/media/picture2.5380fe0a01d52b214546.png",
+    "static/media/picture1.png": "./static/media/picture1.e01650899c859499d80f.png",
+    "static/media/screen.png": "./static/media/screen.3b0cd87ba04868a65281.png",
+    "static/media/flower.webm": "./static/media/flower.8bbdf3e128823eff855e.webm",
+    "static/media/contact-background.jpg": "./static/media/contact-background.7162367f183b24cd189f.jpg",
+    "static/media/about-background02.jpg": "./static/media/about-background02.cc0423a53a77c5c2e1ed.jpg",
+    "static/media/products-background.jpg": "./static/media/products-background.66a214ba3511df337fca.jpg",
+    "static/media/techCore-background.jpg": "./static/media/techCore-background.9a0dd3b73a32bd4ec050.jpg",
+    "static/media/upshadow.png": "./static/media/upshadow.1833d1dceeb4dab7a2ba.png",
+    "static/media/downshadow.png": "./static/media/downshadow.39e6977867fce58e87e7.png",
+    "static/media/about-background01.jpg": "./static/media/about-background01.38ec8a3d47d611f670fa.jpg",
+    "static/media/about-background03.jpg": "./static/media/about-background03.f293512e6372eaa85b6c.jpg",
+    "static/media/pic4.png": "./static/media/pic4.92802852ceb9729c440d.png",
+    "static/media/pic1.png": "./static/media/pic1.b67b460db47cba120fcf.png",
+    "static/media/pic2.png": "./static/media/pic2.eb4481d0c0fc76b11109.png",
+    "static/media/pic3.png": "./static/media/pic3.8580b5943cadaec8f404.png",
+    "static/media/pic6.png": "./static/media/pic6.c337f4afc254f3848a9a.png",
+    "static/media/light-logo.png": "./static/media/light-logo.53a080be858392306d26.png",
+    "static/media/pic7.png": "./static/media/pic7.d334a0993b57ffa5444d.png",
+    "static/media/pic5.png": "./static/media/pic5.13af5925bad3f02584d2.png",
+    "static/media/pic8.png": "./static/media/pic8.5d0a8209001f1663f3f2.png",
+    "static/media/dark-logo.png": "./static/media/dark-logo.d9db5c07edaf266106a5.png",
+    "index.html": "./index.html",
+    "main.1dde5c57.css.map": "./static/css/main.1dde5c57.css.map",
+    "main.2401eab4.js.map": "./static/js/main.2401eab4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1dde5c57.css",
+    "static/js/main.2401eab4.js"
+  ]
+}

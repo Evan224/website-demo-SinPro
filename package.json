@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "animate.css": "^4.1.1",
+    "axios": "^0.27.2",
     "react": "^16.0.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-animation-on-scroll": "^5.1.0",

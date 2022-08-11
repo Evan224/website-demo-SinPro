@@ -129,3 +129,15 @@
     transform: translate3d(0, -4px, 0) scaleY(1.02);
   }
 }
+
+.animate__drawPath {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,13 +1,13 @@
 import "./index.css";
 import Header from "./components/Header";
-import { BrowserRouter, Route,Routes } from "react-router-dom";
+import { HashRouter, Route,Routes } from "react-router-dom";
 import routes from "./utils/routes.js";
 import "animate.css/animate.min.css";
 
 function App() {
   return (
     
-    <BrowserRouter >
+    <HashRouter >
     <div className="relative">
 
       <Header />
@@ -25,7 +25,7 @@ function App() {
       </Routes>
       </div>
 
-    </BrowserRouter>
+    </HashRouter>
 
     
   );
