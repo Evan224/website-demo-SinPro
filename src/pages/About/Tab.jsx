@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import "./lineAnimate.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
@@ -64,19 +64,21 @@ const description={
 }
 
   export default function(props){
-    const {job}=props
+    const {job,curSubTab,handleClickJob}=props;
     const des=description[job];
     const [isCur,setIsCur]=useState(false);
+    useEffect(()=>{
+      if(curSubTab===job){
+        setIsCur(true);
+      }else{
+        setIsCur(false);
+      }
+    },[curSubTab])
 
-    const handleClick=()=>{
-        setIsCur((cur)=>{return !cur})
-      console.log(isCur)
-
-    }
     return(
         <div className="flex flex-col">
             <div className="flex flex-between w-[40vw] py-[2vw] items-center justify-between">
-                   <div onClick={()=>{handleClick()}} className={`${isCur?'text-blue-400':''}`}>{job}</div>
+                   <div onClick={()=>{handleClickJob(job)}} className={`${isCur?'text-blue-400':''}`}>{job}</div>
                     <div className={`${!isCur?'hidden':''} text-white bg-blue-400 px-[0.5vw]`}>一键投递简历</div>
             </div>
 

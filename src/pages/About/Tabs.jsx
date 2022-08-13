@@ -12,6 +12,11 @@ const jobs={
 export default function(){
    
   const [curTab,setCurTab]=useState('算法研发类')
+  const [curSubTab,setCurSubTab]=useState('')
+
+  const handleClickJob=(job)=>{
+    setCurSubTab(job);
+  }
 
   return(
     <div className="w-[70vw] mx-auto text-black flex z-30 justify-between text-[1.3vw] h-[50vw]">
@@ -27,7 +32,8 @@ export default function(){
       <div className="flex flex-col py-[5vw] w-[50vw]">
           {jobs[curTab].map((job)=>{
             return(
-              <Tab job={job} key={job} className="w-[50vw]"></Tab>
+              <Tab job={job} curSubTab={curSubTab} handleClickJob={handleClickJob}
+              key={job} className="w-[50vw]"></Tab>
             )
           })}
       </div>

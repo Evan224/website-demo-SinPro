@@ -133,7 +133,7 @@
 .animate__drawPath {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 5s linear infinite;
+  animation: dash 5s linear forwards;
 }
 
 @keyframes dash {
@@ -143,7 +143,7 @@
 }
 
 .animate__moveLi {
-  animation: dash2 5s linear;
+  animation: dash2 5s linear forwards;
 }
 
 @keyframes dash2 {
