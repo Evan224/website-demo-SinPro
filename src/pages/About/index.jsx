@@ -173,7 +173,7 @@ animateOnce={true}>
 <AnimationOnScroll animateIn="animate__drawPath" duration={3}
 className="w-[50vw] absolute left-[30vw] top-[37vw] "
 animateOnce={true}>
-<Line7/>
+<Line6/>
 </AnimationOnScroll>
 </div>
 
@@ -182,9 +182,9 @@ animateOnce={true}>
 
     <div className="flex w-[70vw] mx-auto justify-around relative">
         <AnimationOnScroll animateIn="animate__drawPath" duration={5}
-        className="w-[30vw] h-[10vw] left-[0vw] mt-[8vw] absolute"
+        className="w-[18vw] h-[10vw] top-[14vw] left-[8vw] absolute"
         animateOnce={true}>
-        <Line3/>
+        <Line7/>
         </AnimationOnScroll>
 
 

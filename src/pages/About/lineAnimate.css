@@ -141,3 +141,19 @@
     stroke-dashoffset: 0;
   }
 }
+
+.animate__moveLi {
+  animation: dash2 5s linear;
+}
+
+@keyframes dash2 {
+  from {
+    opacity: 0;
+    display: hidden;
+    transform: translateY(-1vw);
+  }
+  to {
+    opacity: 100;
+    transform: translateX(0);
+  }
+}

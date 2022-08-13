@@ -1,4 +1,7 @@
 import {useState} from 'react'
+import "./lineAnimate.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 const description={
     "信号处理算法工程师":["负责毫米波雷达的信号处理算法的方案设计与仿真；",
     "负责撰写相应的算法设计文档；",
@@ -58,7 +61,7 @@ const description={
   "根据客户需求，完成传感器集成、标定、测试规划、执行和评价；",
   "测试车辆及设备的管理与维护。"
     ]
-  }
+}
 
   export default function(props){
     const {job}=props
@@ -71,17 +74,24 @@ const description={
 
     }
     return(
-        <div className="flex flex-col leading-normal">
+        <div className="flex flex-col">
             <div className="flex flex-between w-[40vw] py-[2vw] items-center justify-between">
                    <div onClick={()=>{handleClick()}} className={`${isCur?'text-blue-400':''}`}>{job}</div>
-                    <div className={`${!isCur?'hidden':''} text-white bg-blue-400 p-[0.5vw]`}>一键投递简历</div>
+                    <div className={`${!isCur?'hidden':''} text-white bg-blue-400 px-[0.5vw]`}>一键投递简历</div>
             </div>
 
             <div className="flex flex-col items-start">
             {des.map((key,value)=>{
-              console.log(key,value)
+                let number=Number(value)+1;
+                console.log(isCur)
+                if(!isCur){
+                  return(
+                    <div key={value}> </div>
+                  )
+                }
                 return(
-                   <div key={value} className={`${!isCur?'hidden':''} w-[50vw]`}><span>{(Number(value)+1).toString()} 、</span> {key}</div>
+                  <AnimationOnScroll animateIn='animate__moveLi' delay={number*100} key={value} ><span>{(Number(value)+1).toString()} 、</span> {key}</AnimationOnScroll>
+                  
                 )
             })}
             </div>
