@@ -1,6 +1,8 @@
 import {useState,useEffect} from 'react'
 import "./lineAnimate.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Alert from '../../components/Alert';
+
 
 const description={
     "信号处理算法工程师":["负责毫米波雷达的信号处理算法的方案设计与仿真；",
@@ -67,6 +69,7 @@ const description={
     const {job,curSubTab,handleClickJob}=props;
     const des=description[job];
     const [isCur,setIsCur]=useState(false);
+    const [show,setShow]=useState(false);
     useEffect(()=>{
       if(curSubTab===job){
         setIsCur(true);
@@ -79,13 +82,14 @@ const description={
         <div className="flex flex-col">
             <div className="flex flex-between w-[40vw] py-[2vw] items-center justify-between">
                    <div onClick={()=>{handleClickJob(job)}} className={`${isCur?'text-blue-400':''}`}>{job}</div>
-                    <div className={`${!isCur?'hidden':''} text-white bg-blue-400 px-[0.5vw]`}>一键投递简历</div>
+                    <button onClick={()=>{setShow(true)}}
+                    className={`${!isCur?'hidden':''} text-white bg-blue-400 px-[0.5vw] hover:bg-blue-800`}>一键投递简历</button>
             </div>
 
             <div className="flex flex-col items-start">
             {des.map((key,value)=>{
                 let number=Number(value)+1;
-                console.log(isCur)
+
                 if(!isCur){
                   return(
                     <div key={value}> </div>
@@ -97,7 +101,9 @@ const description={
                 )
             })}
             </div>
-       
+            
+            <Alert show={show} handleShow={()=>{setShow(false)}} 
+        type={"copy"}></Alert>
         </div>
     )
   }

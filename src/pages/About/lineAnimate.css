@@ -130,9 +130,39 @@
   }
 }
 
-.animate__drawPath {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
+.animate__drawPath2 {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: dash 5s linear forwards;
+}
+
+.animate__drawPath3 {
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+  animation: dash 5s linear forwards;
+}
+
+.animate__drawPath4 {
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  animation: dash 5s linear forwards;
+}
+
+.animate__drawPath5 {
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  animation: dash 5s linear forwards;
+}
+
+.animate__drawPath6 {
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
+  animation: dash 5s linear forwards;
+}
+
+.animate__drawPath7 {
+  stroke-dasharray: 1800;
+  stroke-dashoffset: 1800;
   animation: dash 5s linear forwards;
 }
 

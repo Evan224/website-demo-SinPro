@@ -24,6 +24,7 @@ export default function(props){
         Word='处为必填项，请务必填写！';
     }else{
         icon=copy
+        Word=`已复制招聘邮箱地址 ：hr@sinpro.ai 可直接发送简历`
     }
 
 
@@ -38,7 +39,7 @@ export default function(props){
   
     
     return (
-        <div className={`${show?'absolute touch-none':'hidden'} top-0 left-0 right-0 w-[100vw] h-[200vh] bg-gray-900/70 z-50`}>
+        <div className={`${show?'absolute touch-none':'hidden'} top-0 left-0 right-0 w-[100vw] h-[1000vh] bg-gray-900/70 z-50`}>
         <div className="flex flex-col fixed top-[38vh] 
         left-[28vw] w-[34vw] h-[15vw] bg-white rounded-lg">
             <div className="relative w-[34vw] bg-blue-400 h-[6vw] rounded-t-lg">
